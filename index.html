@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>group project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey Through Space</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <p>some group project content</p
-    <p>some group project content nino tolordava 222</p>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Journey Through Space</h1>
+            <p>Explore planets, stars and galaxies beyond imagination 🚀</p>
+        </div>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa" alt="Earth" />
+            <h2>🌍 Earth</h2>
+            <p>Our home planet, full of life and beauty floating in space.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3" alt="Moon" />
+            <h2>🌕 Moon</h2>
+            <p>The Moon controls tides and lights our night sky.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564" alt="Saturn" />
+            <h2>🪐 Saturn</h2>
+            <p>Known for its stunning rings and massive size.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1450849608880-6f787542c88a" alt="Galaxy" />
+            <h2>🌌 Galaxy</h2>
+            <p>Billions of stars forming breathtaking cosmic systems.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 • Built with HTML & CSS • Space Edition ✨
+    </footer>
+
+    <script>
+        const starCount = 90;
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * 2 + 1;
+            star.style.width = size + 'px';
+            star.style.height = size + 'px';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.animationDuration = 2 + Math.random() * 4 + 's';
+            document.body.appendChild(star);
+        }
+    </script>
 </body>
 
 </html>
